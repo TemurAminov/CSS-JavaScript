@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #10131c;
+    overflow: hidden;
+    height: 100vh;
+}
+i
+{
+    position: absolute;
+    height: 60px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 1s linear infinite;
+}
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent, darkmagenta)
+}
+i:nth-child(3n+2)
+ {
+     background: linear-gradient(transparent, #0f0)
+ }
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent, #f00)
+}
+i:nth-child(3n+4)
+{
+    background: linear-gradient(transparent, #e3e3e3)
+}
+i:nth-child(3n+5)
+{
+    background: linear-gradient(transparent, darkblue)
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(-10px);
+    }
+    100%
+    {
+        transform: translateY(calc(100vh + 10px));
+    }
+}
+

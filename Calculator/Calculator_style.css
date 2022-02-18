@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #08232d;
+}
+.Calculator
+{
+    position: relative;
+    display: grid;
+    background: #0f3042;
+    box-shadow: 25px 25px 75px rgba(82, 77, 77, 0.25),
+    10px 10px 70px rgba(47, 46, 46, 0.25),
+    inset 5px 5px 10px rgba(28, 27, 27, 0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(21, 20, 20, 0.75);
+    border-radius: 60% / 15% ;
+    padding: 40px;
+}
+.Calculator .value
+{
+    margin: 5px;
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    outline:none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 25px;
+}
+.Calculator span
+{
+    display: flex;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+.Calculator span:active
+{
+    background: #74ff3b;
+    color: #111;
+}
+.Calculator span.clear
+{
+    grid-column: span 2;
+    width: 120px;
+    background: red;
+}
+.Calculator span.clear:active
+{
+    background: #0c2835;
+    color: #111;
+}
+.Calculator span.plus
+{
+    grid-row: span 2;
+    height: 120px;
+}
+
+.Calculator span.equal
+{
+    background: #03b1ff;
+
+}
+
+.Calculator span.equal:active
+{
+    background: #0c2835;
+    color: #111;
+}
+
